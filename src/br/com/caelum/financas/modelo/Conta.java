@@ -15,7 +15,7 @@ public class Conta {
     private String agencia;
     private String numero;
 
-    @OneToOne(mappedBy = "conta")
+    @OneToMany(mappedBy = "conta")
     private List<Movimentacao> movimentacoes;
 
     public List<Movimentacao> getMovimentacoes() {
